@@ -1,5 +1,14 @@
+import ColorBox from "./components/ColorBox";
+import { ColorProvider } from "./contexts/color";
+
 const App = () => {
-	return null;
+	return (
+		<ColorProvider>
+			<div>
+				<ColorBox />
+			</div>
+		</ColorProvider>
+	);
 };
 
 export default App;
